@@ -1,0 +1,66 @@
+
+.header  {
+    font-size: 1.1rem;
+    
+}
+
+    .header a {
+        text-decoration: none;
+    }
+
+button{
+    background-color: blueviolet;
+}
+
+#quiz {
+    width: 50%;
+    /*https://css-tricks.com/almanac/properties/m/margin/*/
+    margin: 0px auto;
+    padding-top: 20px;
+}
+.hide{
+    display: none;
+}
+
+.float-right{
+    float:right;
+}
+
+.float-left{
+    float: left;
+}
+
+.quiz-button{
+    border-radius: 5px;
+    background: purple;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+.button-row {
+    text-align: center;
+}
+.quiz-button:hover {
+    opacity: 0.9;
+}
+
+ul.answers{
+    list-style: none;
+    padding-left: 0px;
+}
+
+ul.answers li{
+    margin-bottom: 20px;
+}
+
+.large-text {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#ResultMessage {
+    color: gray;
+    border-top-style: dashed;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}

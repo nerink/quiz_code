@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quizcodecss.css" />
+    <title>Code Quiz</title>
+</head>
+<body>
+    <div class="header">
+        <div class="float-left">
+            <a href="#" onclick="ShowPage('quiz-high-score');"> View High Score</a>
+        </div>
+        <div class="float-right"> Timer: <span id="timer"></span> </div>
+    </div>
+    <div id="quiz">
+        <div id="quiz-intro" class="quiz-page page-1">
+            <p class="large-text">Coding Quiz Challenge</p>
+            <p>
+                Try to answer the following questions within the allocated time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds.
+            </p>
+            <div class="button-row">
+                <a href="#" class="button quiz-button" id="button-start-quiz">Start Quiz</a>
+            </div>
+        </div>
+
+
+        <div id="question1" class="question hide quiz-page">
+            <p class="quiz-question-question large-text">Commonly used Datatypes DO NOT INCLUDE</p>
+            <ul class="answers">
+                <li><a href="#" correct="no" class="button quiz-button">Strings</a></li>
+                <li><a href="#" correct="no" class="button quiz-button">Booleans</a></li>
+                <li><a href="#" correct="yes" class="button quiz-button">Alerts</a></li>
+                <li><a href="#" correct="no" class="button quiz-button">Numbers</a></li>
+            </ul>
+        </div>
+        <div id="question2" class="hide question quiz-page">
+            <p class="quiz-question-question large-text">The condition of an if/else statement is enclosed withing ___.</p>
+            <ul class="answers">
+                <li><a href="#" correct="no" class="button quiz-button">Quotes</a></li>
+                <li><a href="#" correct="yes" class="button quiz-button">Curly braces</a></li>
+                <li><a href="#" correct="no" class="button quiz-button">Parenthesis</a></li>
+                <li><a href="#" correct="no" class="button quiz-button">Square brackets</a></li>
+            </ul>
+        </div>
+        <div id="question3" class="hide question quiz-page">
+            <p class="quiz-question-question large-text">Arrays in javascript can be used to store ____.</p>
+            <ul class="answers">
+                <li><a href="#" correct="no" class="button quiz-button">Number and strings</a></li>
+                <li><a href="#" correct="no" class="button quiz-button">Other arrays</a></li>
+                <li><a href="#" correct="no" class="button quiz-button">Booleans</a></li>
+                <li><a href="#" correct="yes" class="button quiz-button">All of the above</a></li>
+            </ul>
+        </div>
+        <div id="question4" class="hide question quiz-page">
+            <p class="quiz-question-question large-text">String values must be enclosed within ____ when storing variables. </p>
+            <ul class="answers">
+                <li><a href="#" correct="no" class="button quiz-button">Commas</a></li>
+                <li><a href="#" correct="no" class="button quiz-button">Curly brackets</a></li>
+                <li><a href="#" correct="yes" class="button quiz-button">Quotes</a></li>
+                <li><a href="#" correct="no" class="button quiz-button">Parenthesis</a></li>
+            </ul>
+        </div>
+        <div id="question5" class="hide question quiz-page">
+            <p class="quiz-question-question large-text">A very useful tool used during development and debugging for printing content to the debugger is: </p>
+            <ul class="answers">
+                <li><a href="#" correct="no" class="button quiz-button">Javascript</a></li>
+                <li><a href="#" correct="no" class="button quiz-button">Terminal/bash</a></li>
+                <li><a href="#" correct="no" class="button quiz-button">For loops</a></li>
+                <li><a href="#" correct="yes" class="button quiz-button">console.log</a></li>
+            </ul>
+        </div>
+
+
+
+
+        <div id="quiz-complete" class="hide quiz-page">
+            <p class="large-text">All Done!</p>
+            <p>
+                Your final score is <span id="final-score"></span>
+            </p>
+            <div class="input-row">
+
+                <label>Enter initials: </label><input type="text" id="initials" /><a href="#" class="button quiz-button" id="button-add-score">Submit</a>
+            </div>
+            <div class="button-row">
+                <a href="#" class="button quiz-button" id="button-restart-quiz" >Start Quiz</a>
+            </div>
+        </div>
+        <div id="quiz-high-score" class="hide quiz-page">
+            <h1>High Scores</h1>
+            <div id="high-scores">
+            </div>
+
+            <div class="button-row">
+                <a href="#" class="button quiz-button" id="button-go-beginning">Go Back</a> <!--<a href="#" class="button quiz-button" id="button-clear-scores">Clear highscores</a>-->
+            </div>
+        </div>
+        <div id="ResultMessage" class="hide"></div>
+        
+
+        <!--<div class="controls">
+        <button id="Start Quiz" class="start-btn">Start</button>
+        <button id="next" class="next-btn hide">Next</button>
+    </div>-->
+        <!--<div id="quizcontainer">
+        <p></p>
+        <div id="questions" class="hide"></div>
+        <div id="choices" class="btn-grid"></div>
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+        <button class="btn">Answer 4</button>
+    </div>
+    <div id="resultscontainer"></div>-->
+    </div>
+    <!--<section>
+     <div id=saveresults>
+        <h3> Enter Your Initials</h3>
+        <input type= "text" placeholder="text">
+        <button id= "submit">submit</button>
+     </div>
+    </section>!-->
+    <script src="./quizcode.js"></script>
+    <footer>
+    </footer>
+</body>
+</html>
