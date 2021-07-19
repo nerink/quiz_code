@@ -8,12 +8,14 @@
     <title>Code Quiz</title>
 </head>
 <body>
+<!--Header-->
     <div class="header">
         <div class="float-left">
             <a href="#" onclick="ShowPage('quiz-high-score');"> View High Score</a>
         </div>
         <div class="float-right"> Timer: <span id="timer"></span> </div>
     </div>
+<!--Quiz Section-->
     <div id="quiz">
         <div id="quiz-intro" class="quiz-page page-1">
             <p class="large-text">Coding Quiz Challenge</p>
@@ -25,7 +27,7 @@
             </div>
         </div>
 
-
+<!--Questions-->
         <div id="question1" class="question hide quiz-page">
             <p class="quiz-question-question large-text">Commonly used Datatypes DO NOT INCLUDE</p>
             <ul class="answers">
@@ -71,10 +73,7 @@
                 <li><a href="#" correct="yes" class="button quiz-button">console.log</a></li>
             </ul>
         </div>
-
-
-
-
+<!--Quiz Complete Page-->
         <div id="quiz-complete" class="hide quiz-page">
             <p class="large-text">All Done!</p>
             <p>
@@ -98,30 +97,7 @@
             </div>
         </div>
         <div id="ResultMessage" class="hide"></div>
-        
-
-        <!--<div class="controls">
-        <button id="Start Quiz" class="start-btn">Start</button>
-        <button id="next" class="next-btn hide">Next</button>
-    </div>-->
-        <!--<div id="quizcontainer">
-        <p></p>
-        <div id="questions" class="hide"></div>
-        <div id="choices" class="btn-grid"></div>
-        <button class="btn">Answer 1</button>
-        <button class="btn">Answer 2</button>
-        <button class="btn">Answer 3</button>
-        <button class="btn">Answer 4</button>
-    </div>
-    <div id="resultscontainer"></div>-->
-    </div>
-    <!--<section>
-     <div id=saveresults>
-        <h3> Enter Your Initials</h3>
-        <input type= "text" placeholder="text">
-        <button id= "submit">submit</button>
-     </div>
-    </section>!-->
+<!-- Java Script-->
     <script src="./quizcode.js"></script>
     <footer>
     </footer>

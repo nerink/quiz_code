@@ -14,11 +14,12 @@ var highScores = {
         LoadHighScores();
     }
 }
-
+//Timer Configuration 
 var timer = {
     totalSeconds: 70,
     currentSeconds: 0,
     endingSeconds: 0,
+//Timer Start
     start: function () {
         timer.currentSeconds = timer.totalSeconds;
         gameRunning = true;
@@ -30,6 +31,7 @@ var timer = {
             }
         }, 1000);
     },
+//Timer End 
     end: function () {
         gameRunning = false;
         clearInterval(timerInterval);
@@ -44,6 +46,7 @@ var timer = {
         else SetResultMessage("Congrats you made it!");
         ShowPage("quiz-complete");
     },
+
     clearup: function () {
         timerInterval = null;
         timer.currentSeconds = 0;
@@ -52,8 +55,7 @@ var timer = {
     }
     
 }
-
-
+//Quiz Page
 function ShowPage(pageId) {
     var pages = document.getElementsByClassName("quiz-page");
     for (var i = 0; i < pages.length; i++) pages[i].classList.add("hide");
@@ -70,7 +72,7 @@ function SetResultMessage(message) {
     document.getElementById("ResultMessage").innerHTML = message;
 }
 
-//Adding event listeners to each button
+//Adding event listeners 
 var quizButtons = document.getElementsByClassName("quiz-button");
 for (var i = 0; i < quizButtons.length; i++) {
     quizButtons[i].addEventListener('click', function (event) {
@@ -127,25 +129,9 @@ document.getElementById("button-go-beginning").addEventListener("click", functio
 document.getElementById("button-start-quiz").addEventListener("click", function () {
     startGame();
 });
-/*
-document.getElementById("button-clear-scores").addEventListener("click", function () {
-    highScores.scores = [];
-    LoadHighScores();
-});
-*/
+
 document.getElementById("button-restart-quiz").addEventListener("click", function () {
     startGame();
 });
  
 
-/*GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and score*/
